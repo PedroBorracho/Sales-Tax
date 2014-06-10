@@ -3,6 +3,7 @@
 */
 function updateDOM(receipt,ulID){
 	var ul = document.getElementById(ulID);
+	ul.innerHTML = "";
 	
 	for(var i in receipt.items){
 		var li = document.createElement("li");
