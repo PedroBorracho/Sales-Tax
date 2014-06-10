@@ -1,0 +1,86 @@
+<html>
+<head>
+<script src="businessLogic.js"></script>
+<script src="testLogic.js"></script>
+
+<style>
+	.input{
+		clear: both;
+		border: 1px solid black;
+		padding: 5px;
+		margin-top:10px;
+	}
+
+	h3,ul{
+		margin: 5px;
+	}
+
+	.in_out_container > div{
+		width: 40%;
+		float: left;
+	}
+
+	.compute{
+		clear: both;
+		color: red;	
+	}
+</style>
+
+</head>
+<body>
+
+<h1>Exercise Sales Tax</h1>
+
+<div class="input">
+	<h3>Input 1</h3>
+	<div class="in_out_container">
+		<div>
+			<ul>
+				<li>1 book at 12.49</li>
+				<li>1 music CD at 14.99</li>
+				<li>1 chocolate bar at 0.85</li>
+			</ul>
+		</div>
+	    <div>
+	    	<ul id="output1"></ul>
+	    </div>
+	</div>
+	<div onclick="computeInput1()" class="compute">Compute</div>
+</div>
+
+<div class="input">
+	<h3>Input 2</h3>
+	<div class="in_out_container">
+		<div>
+			<ul>
+				<li>1 imported box of chocolates at 10.00</li>
+				<li>1 imported bottle of perfume at 47.50</li>
+			</ul>
+		</div>
+	    <div>
+	    	<ul id="output2"></ul>
+	    </div>
+	</div>
+	<div onclick="computeInput2()" class="compute">Compute</div>
+</div>
+
+<div class="input">
+	<h3>Input 3</h3>
+	<div class="in_out_container">
+		<div>
+			<ul>
+				<li>1 imported bottle of perfume: 32.19</li>
+				<li>1 bottle of perfume: 20.89</li>
+				<li>1 packet of headache pills: 9.75</li>
+				<li>1 imported box of chocolates: 11.85</li>
+			</ul>
+		</div>
+	    <div>
+	    	<ul id="output3"></ul>
+	    </div>
+	</div>
+	<div onclick="computeInput3()" class="compute">Compute</div>
+</div>
+
+</body>
+</html>
